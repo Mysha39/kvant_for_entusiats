@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="технопарк, Кванториум, Чебоксары, образование, инженерия, изобретательство, триз, 4k, проекты, кейсы, профессия, для энтузиастов, Рост, Галина Владимировна, ГВ, биология, энтомология">
+    <meta name="description" content="краткое описание">
+    <link rel="icon" href="https://kvantorium21.ru/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <title>Кванториум для энтузиастов</title>
+    <style media="screen">
+      @keyframes higher{
+      from{
+        top: -12%;
+      }
+      to{
+        top: 0px;
+      }
+    }
+    @keyframes to{
+      from{
+        top: -100%;
+      }
+      to{
+        top: 0%;
+      }
+    }
+      body{
+        left: 0%;
+        right:0%;
+        margin: 0px;
+        padding:0px;
+      }
+      .menu{
+        position: fixed;
+        animation: higher 1.2s;
+        left: 0%;
+        right:0%;
+        width:100%;
+        top: 0px;
+        height: 12%;
+        background-color: rgba(100, 100, 100, 0.74);
+        z-index: 2;
+      }
+      .menu ul li{
+        position: relative;
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        padding-left: 6%;
+        font-size: 28px;
+        font-family: "Oswald";
+        font-style: italic;
+        transition-duration: 1s;
+      }
+      .menu ul li:hover{
+        transform: translate(5%, 8%);
+        text-shadow: -15px -7px 1px black;
+      }
+      .head_in{
+        position: absolute;
+        animation: to 1.5s;
+        top: 0%;
+        height: 100%;
+        width: 100%;
+        background-color: white;
+        background-image: url("imgs/лого.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+      }
+      #active_m{
+        text-decoration: underline wavy lightblue;
+      }
+      h1{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        color: white;
+        font-size: 52px;
+        font-family: 'Oswald';
+      }
+      .main_part{
+        position: absolute;
+        width: 90%;
+        height: 900%;
+        top: 103%;
+        left: 5%;
+        right: 5%;
+        background-color: #B2EC5D;
+        z-index: 1;
+      }
+      .main_part h2{
+        margin-left: 35px;
+        margin-top: 25px;
+        color: green;
+        font-size: 36px;
+        font-family: "Oswald";
+        font-style: italic;
+      }
+      .list_of ul li{
+        margin-left: 40px;
+        padding-top: 10px;
+        font-family: "Manrope";
+        color: #44944A;
+        font-weight: 900;
+        font-size: 29px;
+        list-style-type: none;
+        transition-duration: 1s;
+      }
+      .list_of ul a{
+        text-decoration: none;
+      }
+      .list_of ul li:hover{
+        transform: translate(15px, 7px);
+        text-shadow: -15px -7px 4px white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="menu">
+      <ul>
+        <a href="index.html"><li>Главная</li></a>
+        <li>Новости</li>
+        <li>Календарь</li>
+        <li>Библиотека</li>
+        <li>Галерея</li>
+        <a href="topics"><li id = "active_m" style="padding-right: 6%">Разделы</li></a>
+      </ul>
+    </div>
+    <div class="head_in">
+      <h1>Кванториум для энтузиастов</h1>
+    </div>
+    <div class="main_part">
+    </div>
+  </body>
+</html>
