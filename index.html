@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta name="keywords" content="технопарк, Кванториум, Чебоксары, образование, инженерия, изобретательство, триз, 4k, проекты, кейсы, профессия, для энтузиастов, Рост, Галина Владимировна, ГВ, биология, энтомология">
+    <meta name="keywords" content="технопарк, Биоквантум, Кванториум,  для энтузиастов, Чебоксары, образование, проекты, кейсы, профессия, Рост, Галина Владимировна, ГВ, биология, энтомология, конкурс">
     <meta name="description" content="краткое описание">
     <link rel="icon" href="https://kvantorium21.ru/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,13 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Oswald:wght@600&display=swap" rel="stylesheet">
     <title>Кванториум для энтузиастов</title>
     <style media="screen">
-      @keyframes higher{
-      from{
-        top: -12%;
-      }
-      to{
-        top: 0px;
-      }
+    @keyframes higher{
+    from{
+      top: -12%;
+    }
+    to{
+      top: 0px;
+    }
     }
     @keyframes to{
       from{
@@ -27,109 +27,217 @@
         top: 0%;
       }
     }
-      body{
-        left: 0%;
-        right:0%;
-        margin: 0px;
-        padding:0px;
-      }
-      .menu{
+    body{
+      left: 0%;
+      right:0%;
+      margin: 0px;
+      padding:0px;
+    }
+    @media (min-width: 1100px){
+    .menu{
+      position: fixed;
+      animation: higher 1.2s;
+      left: 0%;
+      right:0%;
+      width:100%;
+      top: 0px;
+      height: 12%;
+      background-color: rgba(100, 100, 100, 0.74);
+      z-index: 2;
+    }
+    .menu ul li{
+      position: relative;
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      padding-right: 6%;
+      left: 6%;
+      font-size: 28px;
+      font-family: "Oswald";
+      font-style: italic;
+      transition-duration: 1s;
+    }
+    .menu ul li:hover{
+      transform: translate(15px, 7px);
+      text-shadow: -15px -7px 1px black;
+    }
+    .head_in{
+      position: absolute;
+      animation: to 1.5s;
+      top: 0%;
+      height: 100%;
+      width: 100%;
+      background-color: white;
+      background-image: url("imgs/лого.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-attachment: fixed;
+    }
+    #active_m{
+      text-decoration: underline wavy lightblue;
+    }
+    h1{
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      color: white;
+      font-size: 52px;
+      font-family: 'Oswald';
+    }
+     .main_part{
+      position: absolute;
+      height: 1000%;
+      width: 90%;
+      top: 100%;
+      transform: translate(0px, 45px);
+      left: 5%;
+      right: -5%;
+      background-color: #B2EC5D;
+      z-index: 1;
+    }
+    .main_part ul li:hover{
+      transform: translate(15px, 7px);
+      text-shadow: -15px -7px 1px black;
+   }
+    }
+    @media (max-width: 1099px){
+      .burger{
         position: fixed;
-        animation: higher 1.2s;
-        left: 0%;
-        right:0%;
-        width:100%;
-        top: 0px;
-        height: 12%;
-        background-color: rgba(100, 100, 100, 0.74);
-        z-index: 2;
+        width: 100px;
+        height: 100px;
+        border-radius: 30px;
+        top: 20px;
+        right: 20px;
+        background-color: rgba(255, 255, 255, 0.64);;
       }
-      .menu ul li{
-        position: relative;
-        display: inline-block;
-        text-decoration: none;
-        color: white;
-        padding-left: 6%;
-        font-size: 28px;
-        font-family: "Oswald";
-        font-style: italic;
-        transition-duration: 1s;
+      .b_el{
+        position: fixed;
+        background-color: green;
+        border-radius: 15px;
+        width: 68px;
+        height: 15px;
+        top: 40px;
+        right: 32px;
       }
-      .menu ul li:hover{
-        transform: translate(5%, 8%);
-        text-shadow: -15px -7px 1px black;
+      #b2{
+        top: 64px;
+        width: 48px;
       }
-      .head_in{
-        position: absolute;
-        animation: to 1.5s;
-        top: 0%;
-        height: 100%;
-        width: 100%;
-        background-color: white;
-        background-image: url("imgs/лого.png");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-attachment: fixed;
+      #b3{
+        top: 90px;
+        width: 58px;
       }
-      #active_m{
-        text-decoration: underline wavy lightblue;
-      }
-      h1{
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        color: white;
-        font-size: 52px;
-        font-family: 'Oswald';
-      }
-      .main_part{
-        position: absolute;
-        width: 90%;
-        height: 900%;
-        top: 103%;
-        left: 5%;
-        right: 5%;
-        background-color: #B2EC5D;
-        z-index: 1;
-      }
-      .main_part h2{
-        margin-left: 35px;
-        margin-top: 25px;
-        color: green;
-        font-size: 36px;
-        font-family: "Oswald";
-        font-style: italic;
-      }
-      .list_of ul li{
-        margin-left: 40px;
-        padding-top: 10px;
-        font-family: "Manrope";
-        color: #44944A;
-        font-weight: 900;
-        font-size: 29px;
-        list-style-type: none;
-        transition-duration: 1s;
-      }
-      .list_of ul a{
-        text-decoration: none;
-      }
-      .list_of ul li:hover{
-        transform: translate(15px, 7px);
-        text-shadow: -15px -7px 4px white;
-      }
+    .menu{
+      position: fixed;
+      animation: higher 1.2s;
+      left: -24%;
+      right:0%;
+      width:24%;
+      top: 0px;
+      height: 100%;
+      background-color: rgba(100, 100, 100, 0.74);
+      z-index: 2;
+      transition-duration: 1s;
+    }
+    .menu:hover{
+      left: 0px;
+    }
+    .menu ul li{
+      position: relative;
+      list-style-type: none;
+      text-decoration: none;
+      color: white;
+      padding-right: 3%;
+      left: 3%;
+      font-size: 28px;
+      font-family: "Oswald";
+      font-style: italic;
+      transition-duration: 1s;
+    }
+    .head_in{
+      position: absolute;
+      animation: to 1.5s;
+      top: 0%;
+      height: 100%;
+      width: 100%;
+      background-color: white;
+      background-image: url("imgs/лого.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-attachment: fixed;
+    }
+    #active_m{
+      text-decoration: underline wavy lightblue;
+    }
+    h1{
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      color: white;
+      font-size: 52px;
+      font-family: 'Oswald';
+    }
+     .main_part{
+      position: absolute;
+      height: 1000%;
+      width: 90%;
+      top: 630px;
+      transform: translate(0px, 45px);
+      left: 5%;
+      right: -5%;
+      z-index: 1;
+      background-color: #B2EC5D;
+    }
+    }
+    .main_part h2{
+      margin-left: 35px;
+      margin-top: 25px;
+      color: white;
+      font-size: 36px;
+      font-family: "Oswald";
+      font-style: italic;
+    }
+    .list_of ul li{
+      margin-left: 40px;
+      padding-top: 10px;
+      font-family: "Manrope";
+      color: green;
+      font-style: italic;
+      font-weight: 900;
+      font-size: 29px;
+      list-style-type: none;
+      transition-duration: 1s;
+    }
+    .list_of ul a{
+      text-decoration: none;
+    }
+    .a_nas{
+      position: absolute;
+      top: 80px;
+      left: 35px;
+    }
+  </style>
     </style>
   </head>
   <body>
     <div class="menu">
-      <ul>
-        <a href="index.html"><li>Главная</li></a>
-        <li>Новости</li>
-        <li>Календарь</li>
-        <li>Библиотека</li>
-        <li>Галерея</li>
-        <a href="topics"><li id = "active_m" style="padding-right: 6%">Разделы</li></a>
-      </ul>
+      <div class = "contain">
+        <div class="burger">
+          <div class = "b_el" id="b1"></div>
+          <div class = "b_el" id="b2"></div>
+          <div class = "b_el" id="b3"></div>
+        </div>
+        <ul>
+          <a href="" id = "active_m"><li>Главная</li></a>
+          <li>Конкурсы</li>
+          <li>Календарь</li>
+          <li>Библиотека</li>
+          <li>Галерея</li>
+          <a href="topics"><li>Разделы</li></a>
+        </ul>
+      </div>
     </div>
     <div class="head_in">
       <h1>Кванториум для энтузиастов</h1>
