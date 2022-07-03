@@ -140,10 +140,7 @@
       z-index: 2;
       transition-duration: 1s;
     }
-    .menu:active{
-      left: 0px;
-    }
-    .menu:hover{
+    #left{
       left: 0px;
     }
     .menu ul li{
@@ -256,5 +253,19 @@
         </ul>
       </div>
     </div>
+    <script type="text/javascript">
+      if(window.screen.width<1099){
+        let k = 1;
+        document.querySelector(".burger").onclick = function(){
+          if(k == 1){
+            document.querySelector(".menu").id = "left";
+          k = 2;
+          }else{
+            document.querySelector(".menu").id = "";
+            k = 1;
+          }
+        }
+      }
+    </script>
   </body>
 </html>

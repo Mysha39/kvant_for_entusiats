@@ -102,10 +102,10 @@
         position: fixed;
         width: 100px;
         height: 100px;
-        border-radius: 30px;
         top: 20px;
         right: 20px;
-        background-color: rgba(255, 255, 255, 0.64);;
+        border-radius: 30px;
+        background-color: rgba(255, 255, 255, 0.64);
       }
       .b_el{
         position: fixed;
@@ -136,12 +136,6 @@
         z-index: 2;
         transition-duration: 1s;
       }
-      .menu:active{
-        left: 0px;
-      }
-      .menu:hover{
-        left: 0px;
-      }
       .menu ul li{
         position: relative;
         list-style-type: none;
@@ -153,6 +147,9 @@
         font-family: "Oswald";
         font-style: italic;
         transition-duration: 1s;
+      }
+      #left{
+        left: 0px;
       }
       .head_in{
         position: absolute;
@@ -428,5 +425,19 @@
         </table>
       </div>
     </div>
+    <script type="text/javascript">
+      if(window.screen.width<1099){
+        let k = 1;
+        document.querySelector(".burger").onclick = function(){
+          if(k == 1){
+            document.querySelector(".menu").id = "left";
+          k = 2;
+          }else{
+            document.querySelector(".menu").id = "";
+            k = 1;
+          }
+        }
+      }
+    </script>
   </body>
 </html>
